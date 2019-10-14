@@ -1,0 +1,46 @@
+{
+  "name": "merchnt/haproxy-manager",
+  "description": "Set of console commands to manage an HAProxy instance through",
+  "keywords": [
+    "haproxy",
+    "project",
+    "console"
+  ],
+  "homepage": "https://github.com/merchnt/haproxy-manager",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "C:\\Development\\haproxy-client"
+    }
+  ],
+  "require": {
+    "symfony/console": "dev-master",
+    "vlucas/phpdotenv": "~3.6",
+    "merchnt/haproxy-api-client": "@dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Johnathan Dell",
+      "email": "open-source@merchnt.co"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Merchnt\\HAProxyManager\\": "src"
+    },
+    "exclude-from-classmap": [
+      "Tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Merchnt\\HAProxyManager\\Tests\\": "Tests/"
+    }
+  },
+  "minimum-stability": "stable"
+}
