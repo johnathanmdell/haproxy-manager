@@ -15,9 +15,12 @@
     }
   ],
   "require": {
-    "symfony/console": "dev-master",
-    "vlucas/phpdotenv": "~3.6",
-    "merchnt/haproxy-api-client": "@dev"
+    "merchnt/haproxy-api-client": "@dev",
+    "symfony/console": "^4.3",
+    "symfony/dotenv": "^4.3",
+    "symfony/finder": "^4.3",
+    "roave/better-reflection": "^3.5",
+    "overtrue/phplint": "^1.1"
   },
   "require-dev": {
     "phpunit/phpunit": "^8"
@@ -33,6 +36,12 @@
     "psr-4": {
       "Merchnt\\HAProxyManager\\": "src"
     },
+    "classmap": [
+      "app/Kernel.php"
+    ],
+    "files": [
+      "helpers.php"
+    ],
     "exclude-from-classmap": [
       "Tests/"
     ]
@@ -41,6 +50,5 @@
     "psr-4": {
       "Merchnt\\HAProxyManager\\Tests\\": "Tests/"
     }
-  },
-  "minimum-stability": "stable"
+  }
 }
